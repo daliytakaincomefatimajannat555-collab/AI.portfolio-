@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Portfolio Dashboard - Release v1.0.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>AI Portfolio Dashboard</h1>
+
+<!-- Editable description -->
+<textarea id="description" placeholder="Live description updates..."></textarea>
+
+<!-- Charts container -->
+<div id="charts" class="charts-wrapper"></div>
+
+<!-- JS libraries -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+h1 { 
+  color: #1a73e8; 
+  margin-bottom: 20px; 
+}
+
+h3 { 
+  color: #444; 
+  margin: 10px 0; 
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  cursor: grab;
+}
+
+.charts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
